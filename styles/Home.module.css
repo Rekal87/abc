@@ -127,3 +127,41 @@
     filter: invert(1);
   }
 }
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cell input {
+  width: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.plus {
+  cursor: pointer;
+  height: 50px;
+  width: 10px;
+  position: absolute;
+  right: -6px;
+  z-index: 1;
+}
+
+.plus:hover {
+  background: rgba(0, 255, 0, 0.3);
+}
